@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import YearTable from "../../YearTable";
 import FilterComponent from "./FilterComponent";
 import Container from "../../Container";
@@ -13,6 +13,8 @@ const Dashbored = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  console.log("rendering Dashbored");
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
