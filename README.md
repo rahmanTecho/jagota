@@ -1,35 +1,38 @@
-Jagota Sales Dashboard
-Introduction
-Jagota Sales Dashboard is a web application designed to visualize sales data. It allows users to filter data by year and view detailed sales metrics.
+# Jagota Sales Dashboard
 
-Public Access URL
-The application is hosted and can be accessed at: http://jagota-sales-env.eba-vetm3ihj.us-east-1.elasticbeanstalk.com/
+## Introduction
 
-How to Use the App
-Running with Docker Compose
-You can run the application locally using Docker Compose. This requires having Docker and Docker Compose installed on your machine.
+Jagota Sales Dashboard is a web application designed for visualizing sales data. It allows users to filter data by year and view detailed sales metrics.
 
-Starting the Application:
+### Public Access URL
 
-sh
-Copy code
+Access the application here: [Jagota Sales Dashboard](http://jagota-sales-env.eba-vetm3ihj.us-east-1.elasticbeanstalk.com/)
+
+## How to Use the Application
+
+### Running with Docker Compose
+
+Ensure you have Docker and Docker Compose installed on your machine. Then follow these steps:
+
+1. **Start the Application:**
+
 docker-compose up
-This command builds and starts the containers defined in your docker-compose.yml. Once the containers are up and running, you can access the application at http://localhost.
 
-Stopping the Application:
+This command will build and start the containers. Once running, the application is accessible at `http://localhost`.
 
-sh
-Copy code
+2. **Stop the Application:**
+
 docker-compose down
-This command stops and removes the containers, networks, volumes, and images created by docker-compose up.
 
-Navigating the Application
-Dashboard: Access the dashboard to view and interact with the sales data.
-Filtering Data: Use the filter options to select the year range for the sales data you wish to view.
-Technology Stack
-Frontend: The frontend is built with React, offering a dynamic and responsive user interface.
-Backend: The backend is powered by Node.js, providing efficient data handling and API services.
-DevOps:
-Docker & Docker Compose: Used for containerizing the application and managing multi-container Docker applications.
-Nginx: Serves as a reverse proxy, routing requests to the appropriate backend and frontend services.
-AWS Elastic Beanstalk: Used for deploying the application and managing the cloud infrastructure.
+This will stop and remove all running containers and networks.
+
+### Navigating the Dashboard
+
+- Access the dashboard to view the sales data.
+- Use the filter component to select a specific year range and view relevant sales data.
+
+## Technology Stack
+
+- **Frontend**: Developed with React.
+- **Backend**: Built using Node.js and express
+- **DevOps Tools**: Docker, Docker Compose, Nginx for reverse proxy, and AWS Elastic Beanstalk.
