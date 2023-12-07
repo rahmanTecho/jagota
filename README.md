@@ -16,13 +16,13 @@ Ensure you have Docker and Docker Compose installed on your machine. Then follow
 
 1. **Start the Application:**
 
-`docker-compose up`
+`docker compose up`
 
 This command will build and start the containers. Once running, the application is accessible at `http://localhost`.
 
 2. **Stop the Application:**
 
-`docker-compose down`
+`docker compose down`
 
 This will stop and remove all running containers and networks.
 
