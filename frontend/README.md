@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+Jagota Sales Dashboard
+Introduction
+Jagota Sales Dashboard is a web application designed to visualize sales data. It allows users to filter data by year and view detailed sales metrics.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Public Access URL
+The application is hosted and can be accessed at: http://jagota-sales-env.eba-vetm3ihj.us-east-1.elasticbeanstalk.com/
 
-## Available Scripts
+How to Use the App
+Running with Docker Compose
+You can run the application locally using Docker Compose. This requires having Docker and Docker Compose installed on your machine.
 
-In the project directory, you can run:
+Starting the Application:
 
-### `npm start`
+sh
+Copy code
+docker-compose up
+This command builds and starts the containers defined in your docker-compose.yml. Once the containers are up and running, you can access the application at http://localhost.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Stopping the Application:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+sh
+Copy code
+docker-compose down
+This command stops and removes the containers, networks, volumes, and images created by docker-compose up.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Navigating the Application
+Dashboard: Access the dashboard to view and interact with the sales data.
+Filtering Data: Use the filter options to select the year range for the sales data you wish to view.
+Technology Stack
+Frontend: The frontend is built with React, offering a dynamic and responsive user interface.
+Backend: The backend is powered by Node.js, providing efficient data handling and API services.
+DevOps:
+Docker & Docker Compose: Used for containerizing the application and managing multi-container Docker applications.
+Nginx: Serves as a reverse proxy, routing requests to the appropriate backend and frontend services.
+AWS Elastic Beanstalk: Used for deploying the application and managing the cloud infrastructure.
