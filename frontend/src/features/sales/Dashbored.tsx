@@ -13,9 +13,7 @@ const Dashbored = () => {
   useEffect(() => {
     getData();
   }, []);
-
-  console.log("rendering Dashbored");
-
+  
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
   return (
