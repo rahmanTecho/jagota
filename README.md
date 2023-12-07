@@ -6,7 +6,7 @@ Jagota Sales Dashboard is a web application designed for visualizing sales data.
 
 ### Public Access URL
 
-Access the application here: [Jagota Sales Dashboard](http://jagota-sales-env.eba-vetm3ihj.us-east-1.elasticbeanstalk.com/)
+Access the application here on AWS: [Jagota Sales Dashboard](http://jagota-sales-env.eba-vetm3ihj.us-east-1.elasticbeanstalk.com/)
 
 ## How to Use the Application
 
